@@ -26,9 +26,7 @@
         <v-card-text>
           <v-container>
             <v-row>
-              <v-col cols="12">
-                <v-text-field v-model="editedItem.name" label="Name"></v-text-field>
-              </v-col>
+           
               <v-col cols="12">
                 <v-text-field v-model="editedItem.conditions" label="Conditions"></v-text-field>
               </v-col>
@@ -51,7 +49,7 @@
         dialog: false,
         dialogTitle: '',
         headers: [
-          { text: 'Name', value: 'name' },
+         
           { text: 'Conditions', value: 'conditions' },
           { text: 'Actions', value: 'actions', sortable: false }
         ],
@@ -62,7 +60,7 @@
         ],
         editedItem: {
           id: null,
-          name: '',
+     
           conditions: ''
         },
         editedIndex: -1
@@ -71,7 +69,7 @@
     methods: {
       openDialog() {
         this.dialogTitle = 'Add New Item';
-        this.editedItem = { id: null, name: '', conditions: '' };
+        this.editedItem = { id: null,  conditions: '' };
         this.dialog = true;
       },
       editItem(item) {
@@ -88,7 +86,7 @@
       },
       closeDialog() {
         this.dialog = false;
-        this.editedItem = { id: null, name: '', conditions: '' };
+        this.editedItem = { id: null, conditions: '' };
         this.editedIndex = -1;
       },
       saveItem() {

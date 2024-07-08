@@ -101,7 +101,7 @@ export default {
     },
     createMessage() {
       this.tab = 'two'; // Ensure 'two' tab is active
-      this.$router.push({ path: '/createMessage' });
+      this.$router.push({ path: '/about' });
     },
     Drictory() {
       this.tab = 'three'; // Ensure 'three' tab is active
