@@ -7,7 +7,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat>
-          <v-toolbar-title>Data Table Example</v-toolbar-title>
+          <v-toolbar-title>Conditions</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn color="primary" dark @click="openDialog">Add New Item</v-btn>
         </v-toolbar>
@@ -56,9 +56,9 @@
           { text: 'Actions', value: 'actions', sortable: false }
         ],
         users: [
-          { id: 1, name: 'John Doe', conditions: 'Allergies' },
-          { id: 2, name: 'Jane Smith', conditions: 'Asthma' },
-          { id: 3, name: 'Jim Brown', conditions: 'Diabetes' }
+          { id: 1,  conditions: 'Condition1' },
+          { id: 2,  conditions: 'Condition2' },
+          { id: 3,  conditions: 'Condition3' }
         ],
         editedItem: {
           id: null,
