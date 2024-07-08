@@ -4,10 +4,11 @@ import 'vuetify/styles'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
-import { VPicker } from 'vuetify/labs/VPicker'
+import { VCalendar } from 'vuetify/labs/components'
 
 export default createVuetify({
   components: {
-    VPicker,
+    VCalendar,
   },
 })
+

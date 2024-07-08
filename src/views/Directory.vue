@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto" max-width="400">
-    <v-card-item class="bg-orange-darken-4">
+    <v-card-item class="bg-grey-lighten-1">
       <v-card-title>
         User Directory
       </v-card-title>

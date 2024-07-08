@@ -16,14 +16,17 @@
           <v-list-item-icon>
             <v-icon>mdi-inbox</v-icon>
           </v-list-item-icon>
+
           <v-list-item-content>
             <v-list-item-title>View Message</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item @click="createMessage">
           <v-list-item-icon>
             <v-icon>mdi-email-plus</v-icon>
           </v-list-item-icon>
+
           <v-list-item-content>
             <v-list-item-title>Create Message</v-list-item-title>
           </v-list-item-content>
@@ -71,13 +74,18 @@
         <v-list-item>
 
           <v-list-item-icon>
-            <v-icon @click="calendarview"  >mdi-calendar</v-icon>
+            <v-icon @click="Drictory">mdi-account</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
             <v-list-item-title>Item</v-list-item-title>
           </v-list-item-content>
+
+          <v-list-item-action>
+            <v-icon @click="Calendar" >mdi-calendar</v-icon>
+          </v-list-item-action>
         </v-list-item>
+
         <v-list-item>
           <v-list-item-icon>
             <v-icon>mdi-email</v-icon>
@@ -117,8 +125,11 @@ export default {
     createMessage() {
       this.$router.push({ path: '/about' });
     },
-    calendarview() {
+    Drictory() {
       this.$router.push({ path: '/Directory' });
+    },
+    Calendar() {
+      this.$router.push({ path: '/Calendar' });
     },
   },
 };
